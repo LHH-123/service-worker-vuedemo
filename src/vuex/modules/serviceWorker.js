@@ -68,10 +68,7 @@ const actions = {
   },
   init({ state, dispatch }) {
     if ("serviceWorker" in navigator) {
-      var url = "";
-      process.env.NODE_ENV === "development"
-        ? (url = "../../sw.js")
-        : (url = "../sw.js");
+      var url = "../sw.js";
       navigator.serviceWorker.register(url).then(function(swReg) {
         swReg.pushManager.getSubscription().then(function(subscription) {
           if (subscription) {
