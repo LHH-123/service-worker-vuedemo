@@ -33,7 +33,7 @@ self.addEventListener("push", function(event) {
 
 self.addEventListener("notificationclick", function(event) {
   event.notification.close();
-  var url = "http://localhost:1322/";
+  var url = "https://lhh-123.github.io/service-worker-vuedemo/dist/index.html";
   event.waitUntil(
     clients
       .matchAll({
