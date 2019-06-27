@@ -12,10 +12,10 @@ export default {
     }
   },
   created() {
-    this.initWebSocket();
+    // this.initWebSocket();
   },
   destroyed() {
-    this.websock.close() //离开路由之后断开websocket连接
+    //this.websock.close() 
   },
   computed: {
     fetchLoading() {
